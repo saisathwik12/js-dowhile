@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Open console for output</h3>
+
+    <script>
+        //1.ans
+
+        let num = parseInt(prompt("Enter the number : "));
+  
+        if (num <= 0) {
+            return -1;
+        }
+
+        let sum = 0;
+        for (let i = 1; i < num; i++) {
+            if (num % i === 0) {
+            sum += i;
+            }
+        }
+        
+        if (sum === num){
+            console.log(`${num} is perfect number`);
+        }
+        else{
+            console.log("Not Perfect Number");
+        }
+
+
+
+        //2.ans
+
+        let n = parseInt(prompt("Enter the number : "));
+  
+        for(i =2;i<n;i++){
+            if(n%i==0){
+                var p= false;
+                break;
+            }
+            else{
+                p= true;
+            }
+        }
+        
+        if (p){
+            console.log(`${n} is prime number`);
+        }
+
+        else{
+            console.log("Is not a prime");
+        }
+
+        //3.ans
+
+        let str = "ABCDE"
+        let i =0;
+        let str2 ="";
+        do{
+            str2 += str[i]
+            console.log(str2)
+            i++
+        }while(i<str.length)
+
+    </script>
+</body>
+</html>
